@@ -20,6 +20,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro&display=swap"
         rel="stylesheet">
+
+        <!-- link to font awesome icons -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -52,9 +55,16 @@
     <section class="header">
         <img class="logo" src="images/musicTransparentBG.png" alt="Vinyl Record">
         <h1>Music</h1>
+<search>
+    <form action="./search/">
+      <!-- <label for="album">Find an Artist</label> -->
+      <input type="search" id="album" name="q" placeholder="Artist Name" />
+      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </search>
     </section>
-    <section>
-        <ol>
+    <section class="scroll-container">
+        <ol type="1" class="list">
             <li>Fun - Aim & Ignite (2009)</li>
             <li>Andre 3000 - New Blue Sun (2023)</li>
             <li>Steely Dan - Can't Buy A Thrill (1972)</li>
@@ -169,6 +179,8 @@
             <li>Akon - Konvicted (2006)</li>
             <li>Soulfly - Omen (2010)</li>
             <li>Fidlar - Almost Free (2019)</li>
+            <li>Puddle of Mudd - Famous (2007)</li>
+            <li>Ann Peebles - I can't Stand The Rain (1974)</li>
         </ol>
     </section>
 

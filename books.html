@@ -20,6 +20,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro&display=swap"
     rel="stylesheet">
+    <!-- link to font awesome icons -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -51,8 +53,34 @@
   <section class="header">
     <img class="logo" src="images/booksTransparentBG.png" alt="Stack of Books">
     <h1>Books</h1>
+    <search>
+    <form action="./search/">
+      <!-- <label for="album">Find an Artist</label> -->
+      <input type="search" id="album" name="q" placeholder="Author"/>
+      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </search>
   </section>
-      
+      <section>
+        <div class="non-fiction">
+            <h2>Non-Fiction</h2>
+            <ul>
+                <li>The Long Hard Road Out Of Hell - Marilyn Manson</li>
+            </ul>
+        </div>
+        <div class="fiction">
+            <h2>Fiction</h2>
+              <ul>
+                <li>1st to Die - James Patterson</li>
+                <li>2nd Chance - James Patterson</li>
+                <li>3rd Degree - James Patterson</li>
+                <li>4th of July - James Patterson</li>
+                <li>5th Horseman - James Patterson</li>
+                <li>6th Target - James Patterson</li>
+                <li>7th Heaven - James Patterson</li>
+            </ul>
+        </div>
+      </section>
     
 </body>
 
