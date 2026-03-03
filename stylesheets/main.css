@@ -165,7 +165,7 @@ body {
 }
 
 body {
-	background: #EAE0D5;
+	background: #eae0d5;
 	font-size: 12px;
 	font-family: "Comic Neue", cursive;
 }
@@ -213,6 +213,15 @@ h1 {
 	font-size: 3em;
 }
 
+li {
+	font-size: 13px;
+}
+
+.books-container,
+.scroll-container {
+	/* background: #fefae0;  */
+}
+
 footer {
 	display: flex;
 	justify-content: center;
@@ -228,6 +237,7 @@ footer {
 .search-bar {
 	padding: 15px 0;
 }
+
 .scroll-container {
 	height: 400px;
 	width: 70%;
@@ -238,14 +248,16 @@ footer {
 
 .two-column {
 columns: 30rem auto;
-
 }
 
 .list li {
-padding: 5px 30px;
+padding: 5px 10px;
 list-style: decimal inside;
 
 }
+
+/** Movies Page **/
+
 
 /** Books Page **/
 .books-container {
@@ -260,7 +272,7 @@ list-style: decimal inside;
 	width: 45%;
 	overflow: scroll;
 	height: 400px;
-	border: solid 2px black;
+	border: 3px solid #22333B;
 	margin: 5px;
 }
 
@@ -270,8 +282,8 @@ h2 {
 	text-decoration: underline;
 }
 
-.books-list {
-	padding: 5px;
+.books-list li{
+	list-style: none;
 }
 
 
