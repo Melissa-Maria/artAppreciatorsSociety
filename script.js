@@ -51,23 +51,46 @@ function newFunction() {
         });
     });
 }
-// Search Bar //
-// let input = document.querySelector('searchBar');
-// let listItems = document.querySelector('li');
-// input.addEventListener('searchbar', filter);
 
-// function filter (){
-//     let search = input.value.toLowerCase();
 
-//     listItems.forEach(function(li){
-//         text = li.innerHTML.toLowerCase();
-//         found = text.indexOf(search);
-//         if(search == ''){
-//             li.style.display = 'block';
-//         }else if(found == -1){
-//             li.style.display = 'none';
-//         } else {
-//             li.style.display = 'block';
-//         }
-//     })
-// }
+// //search bar albums 
+function searchArtists(){
+const artist = document.getElementById("searchInputArtist");
+const albumList = document.querySelectorAll("#albumList li");
+
+artist.addEventListener("input", function () {
+  const value = this.value.toLowerCase();
+
+  albumList.forEach(li => {
+    const spanText = li.querySelector("span").textContent.toLowerCase();
+
+    if (spanText.includes(value)) {
+      li.style.display = "";
+    } else {
+      li.style.display = "none";
+    }
+  });
+});
+}
+
+
+//search bar movies 
+function searchMovies(){
+const movie = document.getElementById("searchInputMovie");
+const movieList = document.querySelectorAll("#movieList li");
+
+movie.addEventListener("input", function () {
+  const value = this.value.toLowerCase();
+
+  movieList.forEach(li => {
+    const spanText = li.querySelector("span").textContent.toLowerCase();
+
+    if (spanText.includes(value)) {
+      li.style.display = "";
+    } else {
+      li.style.display = "none";
+    }
+  });
+});
+}
+

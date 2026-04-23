@@ -231,13 +231,32 @@ footer {
 	padding-bottom: 10px;
 }
 
+.search-wrapper {
+  position: relative; /* Acts as the anchor for the absolute icon */
+  display: inline-block;
+  width: 20%;
+}
+
+.icon {
+  position: absolute;
+  left: 10px; /* Adjust based on your design */
+  top: 50%;
+  transform: translateY(-50%); /* Centers the icon vertically */
+  color: #888;
+}
+
+.searchBar {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #22333B;
+  border-radius: 4px;
+}
+
+
 /** Books Page **/
 
 /** Albums Page **/
-.search-bar {
-	padding: 15px 0;
-}
-
 .scroll-container {
 	height: 400px;
 	width: 70%;
@@ -285,6 +304,9 @@ h2 {
 .books-list li{
 	list-style: none;
 }
+
+/*** search bar practice ***/
+
 
 
 

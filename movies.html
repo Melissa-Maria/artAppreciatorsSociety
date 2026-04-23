@@ -54,24 +54,34 @@
     <section class="image-container header">
         <img class="mitchell logo" src="images/movieTransparentBG2.png" alt="Drive in movie showing Pulp Fiction">
         <h1>Movies</h1>
-        <search>
+        <!-- search bar-->
+        <search class= "search-wrapper">
             <form action="./search/" class="search-bar">
                 <!-- <label for="album">Find an Artist</label> -->
-                <input type="search" id="album" name="q" placeholder="Movie Title" />
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="search" id="searchInputMovie" class="searchBar" placeholder="Movie Title" onkeyup="searchMovies()"/>
+                <i class="fa-solid fa-magnifying-glass icon"></i>
             </form>
         </search>
     </section>
 
     <section class="scroll-container">
-        <ol type="1" class="list">
-            <li>Where The Day Takes You <i>(1992)</i></li>
-            <li class="movie movie-2">The Game <i>(1997)</i></li>
-            <li>Memento <i>(2000)</i></li>
-            <li>8mm <i>(1999)</i></li>
-            <li>City of God <i>(2002)</i></li>
-            <li>The Prestige <i>(2006)</i></li>
-            <li>Used Cars <i>
+        <ol id= "movieList" type="1" class="list">
+            <li><span>Where The Day Takes You</span> <i>(1992)</i></li>
+            <li><span>The Game</span> <i>(1997)</i></li>
+            <li><span>Memento</span> <i>(2000)</i></li>
+            <li><span>8mm</span> <i>(1999)</i></li>
+            <li><span>City of God</span> <i>(2002)</i></li>
+            <li><span>Thce Prestige</span> <i>(2006)</i></li>
+            <li><span>Used Cars</span><i>(1980)</i></li>
+            <li><span>Parasite</span><i>(2019)</i></li>
+            <li><span>Man On Fire</span><i>(2004)</i></li>
+            <li><span>Everybody Wants Some!!</span><i>(2016)</i></li>
+            <li><span>Fear</span><i>(1996)</i></li>
+            <li><span>The Pineapple Express</span><i>(2008)</i></li>
+            <li><span>Brawl in Cell Block 99</span><i>(2017)</i></li>
+            <li><span>RocknRolla</span><i>(2008)</i></li>
+            <li><span>Snatch</span><i>(2000)</i></li>
+            <li><span>Lonely Hearts</span><i>(2006)</i></li>
 
         </ol>
     </section>
